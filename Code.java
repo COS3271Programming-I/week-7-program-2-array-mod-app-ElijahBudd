@@ -30,18 +30,18 @@ public class Array_Mod_App {
 			
 			// Display current array
 			System.out.println("\nCurrent numbers:");
-			for (int i = 0; i< listCount; i++) {
+			for (int i = 0; i < listCount; i++) {
 				System.out.print(numbers[i] + " ");
 			}
 			System.out.println();
 			
 			// Ask which index to edit
 			System.out.print("Enter index (0 to " + (listCount - 1) + ") to edit: ");
-			int index = userinput.nextInt();
+			int indexChoice = userinput.nextInt();
 			
-			if (index >= 0 && index < listCount) {
+			if (indexChoice >= 0 && indexChoice < listCount) {
 				System.out.print("Enter new value: ");
-				numbers[index] = userinput.nextInt();
+				numbers[indexChoice] = userinput.nextInt();
 			} 
 			else {
 				System.out.println("Invaild index!");
